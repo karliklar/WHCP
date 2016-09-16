@@ -16,7 +16,7 @@
 } 
 
 .sl-slide {
-	z-index: 1;
+	z-index: --1;
 }
 
 /* The duplicate parts/slices */
@@ -97,37 +97,45 @@
 /* Default styles for background colors */
 .sl-slide{
 	display: none;
+
 }
 .sl-slide-horizontal .sl-slide-inner {
-	background: #3498DB;
+	background: #8ac4eb;
 }
 
 .sl-slide-vertical .sl-slide-inner {
-	background: #E67E22;
+	background: #75b9e7;
 }
 
 .item3 .sl-slide-inner {
-	background: #9B59B6;
+	background: #3498dc;
 }
 
-.sl-slider h2 {
+.sl-slider img {
+	position: relative;
+	line-height: normal;
+	z-index: 2000;
+}
+
+.sl-slide-horizontal .sl-slide-inner h2 {
 	padding: 170px 0 0;
 	margin: 0;
 	position: relative;
 	font-size: 60px;
 	line-height: normal;
-	z-index: 100;
+	z-index: 2000;
 }
 
 .sl-slider h2, .sl-slider h3{
 	color: #fff;
+
 }
 
 .sl-slider h3 {
 	margin-top: 0;
 	position: relative;
 	line-height: normal;
-	z-index: 100;
+	z-index: 2000;
 }
 
 /* Custom navigation arrows */
