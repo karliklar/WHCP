@@ -401,3 +401,9 @@ a .icon-rotate-90:before,a .icon-rotate-180:before,a .icon-rotate-270:before,a .
 .icon-vk:before{content:"\f189";}
 .icon-weibo:before{content:"\f18a";}
 .icon-renren:before{content:"\f18b";}
+.icon-nose{content:url(../images/ico/nose.ico);}
+.icon-dentist{content:url(../images/ico/tooth.ico);}
+.icon-ent{content:url(../images/ico/ear.png);}
+.icon-gastro{content:url(../images/ico/gastro.png);}
+.icon-knee{content:url(../images/ico/knee.png);}
+.icon-mortor{content:url(../images/ico/mortor.png);}
