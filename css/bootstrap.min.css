@@ -332,6 +332,12 @@ input.search-query{padding-right:14px;padding-right:4px \9;padding-left:14px;pad
 .form-search .input-append,.form-inline .input-append,.form-search .input-prepend,.form-inline .input-prepend{margin-bottom:0;}
 .form-search .radio,.form-search .checkbox,.form-inline .radio,.form-inline .checkbox{padding-left:0;margin-bottom:0;vertical-align:middle;}
 .form-search .radio input[type="radio"],.form-search .checkbox input[type="checkbox"],.form-inline .radio input[type="radio"],.form-inline .checkbox input[type="checkbox"]{float:left;margin-right:3px;margin-left:0;}
+.form-search input,.form-inline2 input,.form-horizontal input,.form-search textarea,.form-inline2 textarea,.form-horizontal textarea,.form-search select,.form-inline2 select,.form-horizontal select,.form-search .help-inline2,.form-inline2 .help-inline2,.form-horizontal .help-inline2,.form-search .uneditable-input,.form-inline2 .uneditable-input,.form-horizontal .uneditable-input,.form-search .input-prepend,.form-inline2 .input-prepend,.form-horizontal .input-prepend,.form-search .input-append,.form-inline2 .input-append,.form-horizontal .input-append{display:inline-block;*display:inline;*zoom:1;margin-bottom:0;vertical-align:middle;}
+.form-search .hide,.form-inline2 .hide,.form-horizontal .hide{display:none;}
+.form-search label,.form-inline2 label,.form-search .btn-group,.form-inline2 .btn-group{display:inline-block;}
+.form-search .input-append,.form-inline2 .input-append,.form-search .input-prepend,.form-inline2 .input-prepend{margin-bottom:0;}
+.form-search .radio,.form-search .checkbox,.form-inline2 .radio,.form-inline2 .checkbox{padding-left:0;margin-bottom:0;vertical-align:middle;}
+.form-search .radio input[type="radio"],.form-search .checkbox input[type="checkbox"],.form-inline2 .radio input[type="radio"],.form-inline2 .checkbox input[type="checkbox"]{float:left;margin-right:3px;margin-left:0;}
 .control-group{margin-bottom:10px;}
 legend+.control-group{margin-top:20px;-webkit-margin-top-collapse:separate;}
 .form-horizontal .control-group{margin-bottom:20px;*zoom:1;}.form-horizontal .control-group:before,.form-horizontal .control-group:after{display:table;content:"";line-height:0;}
