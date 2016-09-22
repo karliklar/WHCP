@@ -120,12 +120,10 @@
                    
             <div class="span4">
                         <label>Address<span style="color:#DD0003"> *</span></label>
-                                      <p>(Please provide your address to be given the physicians closest to your area.)</p>
-                                    <div class="col-xs-6">
+
                                         <input type="text" class="input-block-level" name="city" id="city" required="required" placeholder="City">
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <select class="input-block-level" name="state" id="state" required>           
+                                        <select class="input-block-level" name="state" id="state" required> 
+                                    <option disabled selected>State</option>          
                                     <option value="Al">Alabama</option>
                                     <option value="AK">Alaska</option>
                                     <option value="AZ">Arizona </option>
@@ -178,10 +176,7 @@
                                     <option value="WY">Wyoming</option>
                                     </select>
 
-                                    </div>
-                                    <div class="col-xs-3">
                                         <input type="text" class="input-block-level" name="zip" id="zip" required="required" placeholder="Zip Code">
-                                    </div>
                                     </div>
                      <div class="span3">
             <h4>Our Address</h4>
@@ -199,15 +194,16 @@
                 <i class="icon-globe"></i> &nbsp;http://www.woodlandhillspharmacy.com
             </p>
         </div>
-                    </div>
-                    <div class="span9">
+        </div>
+                    <div class="span7">
                         <label>Message</label>
-                        <textarea name="message" id="message" required="required" class="input-block-level" rows="8"></textarea>
+                        <textarea name="message" id="message" required="required" class="input-block-level"></textarea>
                          <input type="checkbox"  name="terms" id="terms" value="agreed" required> I agree to the 
                             <a href="pt-rights.html">terms and conditions <span style="color:#FF0004">*</span></a> 
 
-                <button type="submit" class="btn btn-primary btn-large pull-right">Send Message</button>
-                <p> </p>
+                              <button type="submit" class="btn btn-primary btn-large pull-right">Send Message</button>
+                              <p> </p>
+
                     </div>
 
                 </div>
