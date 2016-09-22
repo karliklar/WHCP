@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Contact Us | WHCP</title>
+    <title>Online RX Refill | WHCP</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
@@ -15,6 +15,34 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sl-slide.css">
+     <!--Add_Field Script-->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+<!--  rx add field script-->
+<script>
+ $(document).ready(function(){  
+      var i=1;  
+      $('#addrx').click(function(){  
+           i++;  
+           $('#rxdynamic_field').append('<tr id="row'+i+'"><td><input type="number" name="rx[]" placeholder="Prescription Number" class="form-control rx_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-black btn_remove">X</button></td> </tr>');  
+      });  
+      $(document).on('click', '.btn_remove', function(){  
+           var button_id = $(this).attr("id");   
+           $('#row'+button_id+'').remove();  
+      });  
+      $('#submit').click(function(){            
+           $.ajax({  
+                url:"process.php",  
+                method:"POST",  
+                data:$('#addrx_form').serialize(),  
+                success:function(data)  
+                {  
+                     alert(data);  
+                     $('#addrx_form')[0].reset();  
+                }  
+           });  
+      });  
+ });  </script>
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="https://use.fontawesome.com/9e67467047.js"></script>
@@ -78,7 +106,7 @@
                             </ul>
                         </li>
                         <li><a href="blog.html">About</a></li> 
-                        <li><a href="contact-us.html">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li class="login">
                             <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
                         </li>
@@ -97,38 +125,40 @@
 
     <section id="contact-page" class="container">
         <div class="row-fluid">
+            
 
-            <div class="span8">
-                <h4>Contact Form</h4>
+    </div>
+
+            <div class="span12">
+                <h4>Refill Your Prescription</h4>
+                <p>Refill your prescription online, one of our customer service representatives will contact you within the next buisness day to process your order.</p>
                 <div class="status alert alert-success" style="display: none"></div>
 
-                <form id="contact-form" name="contact-form" method="post" action="process.php" role="form">
+                <form id="rx-contact-form" name="rx-contact-form" method="post" action="process.php" role="form">
                   <div class="row-fluid">
-                    <div class="span5">
+                   <!--Email Subject (Hidden)-->
+                            <input type="hidden" class="input-block-level" name="email_subject" id="email_subject" value="Online Refill Request">
+                    <div class="span3">
                     <input type="hidden" class="input-block-level" name="email_subject" id="email_subject" value="Contact Us Request">
-                        <label>Name<span style="color:#DD0003"> *</span></label>
+                        <label>Name As Appears On Prescription <span style="color:#DD0003"> *</span></label>
                         <input type="text" class="input-block-level" name="name" id="name" required="required" placeholder="Your Full Name">
                         <label>Email Address</label>
                         <input type="text" class="input-block-level" name="email" id="email" placeholder="Your Email Address">
                         <label>Contact Number<span style="color:#DD0003"> *</span></label>
                         <input type="tel" class="input-block-level" name="phone" id="phone" required="required" placeholder="Your Contact Number">
                     </div>
-                    <div class="span7">
-                        <label>Message</label>
-                        <textarea name="message" id="message" required="required" class="input-block-level" rows="8"></textarea>
-                         <input type="checkbox"  name="terms" id="terms" value="agreed" required> I agree to the 
-                            <a href="pt-rights.html">terms and conditions <span style="color:#FF0004">*</span></a> 
-                    </div>
 
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-large pull-right">Send Message</button>
-                <p> </p>
-
-            </form>
-        </div>
-
-        <div class="span3">
+                   
+            <div class="span4">
+                        <label>Doctor <span style="color:#DD0003"> *</span></label>
+                        <input type="text" class="input-block-level" name="mdname" id="mdname" required="required" placeholder="Your Prescribing Doctor">
+                        <label>Pick Up Date<span style="color:#DD0003"> *</span></label>
+                        <input type="date" class="input-block-level" name="date" id="date" placeholder="Your Email Address">
+                        <label>Pick Up Time</label>
+                        <input type="time" class="input-block-level" name="time" id="time" required="required" placeholder="Your Contact Number">
+                        If you would like the ship your prescription, please fill out our<br> <a href="autoship.html">Auto Ship Form</a>. 
+                                    </div>
+                     <div class="span3">
             <h4>Our Address</h4>
             <p>
                 <i class="icon-map-marker pull-left"></i> 20631 Ventura Blvd Ste 305<br>
@@ -143,12 +173,22 @@
             <p>
                 <i class="icon-globe"></i> &nbsp;http://www.woodlandhillspharmacy.com
             </p>
-             <p> 
-                <i class="icon-time icon-large"></i>Mon-Fri | 8:00am-5:00pm
-             </p>
         </div>
+        </div>
+                    <div class="span7">
+                        <label>Message</label>
+                        <textarea name="message" id="message" required="required" class="input-block-level"></textarea>
+                         <input type="checkbox"  name="terms" id="terms" value="agreed" required> I agree to the 
+                            <a href="pt-rights.html">terms and conditions <span style="color:#FF0004">*</span></a> 
 
-    </div>
+                              <button type="submit" class="btn btn-primary btn-large pull-right">Send Message</button>
+                              <p> </p>
+
+                    </div>
+
+                </div>
+            </form>
+        </div>
 
 </section>
 <!--Bottom-->
