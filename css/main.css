@@ -169,3 +169,7 @@ ul.faq li>div{margin-left:70px}
 ul.faq li>div h3{margin-top:0}
 #error{text-align:center;margin-top:150px;margin-bottom:150px}
 .links h4 {margin-top: 60px;}
+ul.gallery li .preview .popular{width:200px;height:40px;position:absolute;top:50%;left:2%;display:inline-block;text-align:center;margin-top:-20px;opacity:0;filter:alpha(opacity=0);-webkit-transform:translate(0,-50px);-moz-transform:translate(0,-50px);-ms-transform:translate(0,-50px);-o-transform:translate(0,-50px);transform:translate(0,-50px);-webkit-transition:300ms;-moz-transition:300ms;-o-transition:300ms;transition:300ms}
+ul.gallery li .preview .popular>a{width:50px;height:40px;line-height:40px;display:inline-block;text-align:center;background:#6DB5E5;color:#fff;text-shadow:0 1px rgba(0,0,0,0.3);font-size:18px;margin:0 1px}
+ul.gallery li .preview:hover .overlay,ul.gallery li .preview:hover .popular{opacity:1;filter:alpha(opacity=100)}
+.popular h4 {margin-top: 60px;}
