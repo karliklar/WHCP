@@ -17,9 +17,9 @@ if (!$db_selected){
 
 /*Email Var info*/
 	$email_from =$name;
-    $email_rx = 'patricial@woodlandhillspharmacy.com,info@woodlandhillspharmacy.com';
-	$email_md = 'KARLIK@woodlandhillspharmacy.com, info@woodlandhillspharmacy.com';
-	$email_cont = 'info@woodlandhillspharmacy.com';
+    $email_rx = 'KARLIK@woodlandhillspharmacy.com'; /*, patricial@woodlandhillspharmacy.com,info@woodlandhillspharmacy.com';*/
+	$email_md = 'KARLIK@woodlandhillspharmacy.com'; /*, info@woodlandhillspharmacy.com';*/
+	$email_cont = 'KARLIK@woodlandhillspharmacy.com'; /*'info@woodlandhillspharmacy.com';*/
 	$email_topic = $_POST['email_subject'];
 	
 /*Field Variables*/
@@ -34,6 +34,7 @@ if (!$db_selected){
 	$state = @trim(stripslashes($_POST['state']));
 	$zip = @trim(stripslashes($_POST['zip']));
 		$rx = implode(', ', $_POST['rx']);
+		$onetime = implode(', ', $_POST['onetime']);
 		$auto = implode(', ', $_POST['auto']) . ' ' . @trim(stripslashes($_POST['autocheck']));
 	$textnotify = @trim(stripslashes($_POST['textnotify']));
 		$typearray = implode(', ', $_POST['mdtype']);
@@ -84,7 +85,7 @@ if (!$db_selected){
 		'Auto Ship Request' . "\n\n" . '_____________________' . "\n\n" . 
 			'Patient Info: ' . 	$name . ', ' . $email . ', ' . $phone . "\n\n" .  										
 			'Requested Start Date:' . $date .  "\n\n" . "\n\n" . 
-			'Auto Ship RX Number(s): '  . $auto . "\n\n" .	
+			'Auto Ship RX Number(s): '  . $auto . "\n\n" .	$onetime
 			'Text Notify?: ' . $textnotify . "\n\n" ."\n\n" .
 		
 		'Please forward all Dr orders, prescription refills, autoship forms and MD referrals to the appropriate rep.' . "\n\n" .

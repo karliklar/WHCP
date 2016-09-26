@@ -16,7 +16,7 @@
 } 
 
 .sl-slide {
-	z-index: -1;
+	z-index: 1;
 }
 
 /* The duplicate parts/slices */
@@ -95,21 +95,35 @@
 }
 
 /* Default styles for background colors */
-.sl-slide{
-	display: none;
 
+/*.item1 .sl-slide-inner {
+	background: url(images/banners/welcome.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	position: absolute;
+	line-height: normal;
+	z-index: -1;
 }
-.sl-slide-horizontal .sl-slide-inner {
-	background: #8ac4eb;
+.item2 .sl-slide-inner {
+	background: url(images/banners/biotoxin-gray.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
 }
-
-.sl-slide-vertical .sl-slide-inner {
-	background: #75b9e7;
-}
-
 .item3 .sl-slide-inner {
-	background: #3498dc;
+	background: url(images/banners/bio-identic.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
+.item4 .sl-slide-inner {
+	background: url(images/banners/atomized_caps3.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.item5 .sl-slide-inner {
+	background: url(images/banners/dental_syringes3.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}*/
 
 .sl-slider img {
 	position: absolute;
