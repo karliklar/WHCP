@@ -174,3 +174,4 @@ ul.gallery li .preview .popular{width:200px;height:40px;position:absolute;top:50
 ul.gallery li .preview .popular>a{width:50px;height:40px;line-height:40px;display:inline-block;text-align:center;background:#6DB5E5;color:#fff;text-shadow:0 1px rgba(0,0,0,0.3);font-size:18px;margin:0 1px}
 ul.gallery li .preview:hover .overlay,ul.gallery li .preview:hover .popular{opacity:1;filter:alpha(opacity=100)}
 .popular h4 {margin-top: 60px;}
+.preview #products img {width: 150;height: 600px;}
