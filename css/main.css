@@ -81,7 +81,6 @@ ul.tag-cloud li{display:inline-block;margin:0 0 2px 0}
 	
 /*Login CSS end*/
 	.gap{margin-bottom:50px}
-	.gap-top{margin-top:1000px}
 .big-gap{margin-bottom:100px}
 .no-margin{margin:0;padding:0}
 #services{background:#252525;color:#999}
@@ -173,5 +172,9 @@ ul.faq li>div h3{margin-top:0}
 ul.gallery li .preview .popular{width:200px;height:40px;position:absolute;top:50%;left:2%;display:inline-block;text-align:center;margin-top:-20px;opacity:0;filter:alpha(opacity=0);-webkit-transform:translate(0,-50px);-moz-transform:translate(0,-50px);-ms-transform:translate(0,-50px);-o-transform:translate(0,-50px);transform:translate(0,-50px);-webkit-transition:300ms;-moz-transition:300ms;-o-transition:300ms;transition:300ms}
 ul.gallery li .preview .popular>a{width:50px;height:40px;line-height:40px;display:inline-block;text-align:center;background:#6DB5E5;color:#fff;text-shadow:0 1px rgba(0,0,0,0.3);font-size:18px;margin:0 1px}
 ul.gallery li .preview:hover .overlay,ul.gallery li .preview:hover .popular{opacity:1;filter:alpha(opacity=100)}
-.popular h4 {margin-top: 60px;}
+.popular h4 {margin-top: 60px;margin-right: 10px;}
 .preview #products img {width: 150;height: 600px;}
+ul.gallery li .preview .prodname {width:200px;height:40px;position:absolute;top:50%;left:2%;display:inline-block;text-align:center;margin-top:-20px;opacity:0;filter:alpha(opacity=0);-webkit-transform:translate(0,-50px);-moz-transform:translate(0,-50px);-ms-transform:translate(0,-50px);-o-transform:translate(0,-50px);transform:translate(0,-50px);-webkit-transition:300ms;-moz-transition:300ms;-o-transition:300ms;transition:300ms}
+ul.gallery li .preview .prodname >a{width:50px;height:40px;line-height:40px;display:inline-block;text-align:center;background:#6DB5E5;color:#fff;text-shadow:0 1px rgba(0,0,0,0.3);font-size:18px;margin:0 1px}
+ul.gallery li .preview:hover .overlay,ul.gallery li .preview:hover .prodname {opacity:1;filter:alpha(opacity=100)}
+.prodname  h4 {margin-top: 60px;margin-left: 80px;}
