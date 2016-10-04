@@ -141,8 +141,10 @@
                 <i class="icon-globe"></i> &nbsp;http://www.woodlandhillspharmacy.com
             </p>
              <p> 
-                <i class="icon-time icon-large"></i>Mon-Fri | 8:00am-5:00pm
+                <i class="icon-time icon-large"></i> &nbsp;Mon-Fri | 8:00am-5:00pm
              </p>
+             <label for"ez-widget" style="margin-top:20px;"> Text me about my refills!</label> 
+          <button class="btn-primary btn-large" data-toggle="modal" href="#ez-widget">Text me!</button>
         </div>
 
     </div>
@@ -273,6 +275,74 @@
 </footer>
 <!--/Footer-->
 
+ <!--EZ Text Notify Form-->
+
+<div id="ez-widget" class="modal hide fade in">
+                        <h1 class="modal-header">Refill Text Notification</h1>
+                        <h5 class="modal-header">This will notify you whenever your medication is available for refill. This does not fill or automatically ship your medication.</h5>
+                      <form
+            enctype="application/x-www-form-urlencoded"
+            action="https://app.eztexting.com/widgets?_method=subscribe"
+            id="ez-form"
+            method="post"
+                        target="subscribed"
+                        onsubmit="
+                                                window.open(
+                        '',
+                        'subscribed',
+                        'width=530,' +
+                        'height=370,' +
+                        'scrollbars=no,resizable=yes,status=no,toolbar=0'
+                );
+                            "
+        >
+            <input type="hidden" name="serializedData" value="eNpdUclOwzAQ/ZXgc1CztbS5cShQRCsk4EQ5uM4kMTh25LHVVlX/ncmiqnDLvG3GeUkKIsvmRZpGd3E6K8uIL7Ikni9mU5EReGISH63xLb6BAuGk0fdKmT0ULGcRCxkfpkHD8k8Wp0mSJgv2FbJSgip6MCFlysKYQJSV9u0T8AIsZTg4uEAbJ8sjadALAYilVxfBe831T3A0PiiNDdDvUFi5k7oKnAl6d0MOXsGQIgXvjsQbSpO41HynoHg2Uq8H1Xj29x/kWrtsuFSbq6jRAR3+YOw/ihh3bLuQ7o2aN2Oe8OhMsxJGf1hFUO1cm28n2wlxDT+Mu/EV7NpoV5NiSsxeFsN31K2sQVa1o5GK6E4U/cZSWnS3/RAyj2BX1EUyv4ujLGRV18OLRHKdLlXkbDP84PP5F6C6nzs=">
+            
+<div class="modal-body">
+   
+    <div>
+ <label for="PhoneNumber">Phone Number</label>
+
+        <input id="PhoneNumber" name="PhoneNumber" type="tel"
+               value=""
+               required="required" placeholder="(e.g. 2223334444)"
+               pattern="^[2-9][0-9]{9}$" />
+    </div>  
+   <div class="pull-left">
+    <label for="FirstName">First Name</label>
+
+        <input id="FirstName" name="FirstName" type="text"
+               value="" autocomplete="off"
+               required="required" />
+    </div>
+     <div class="pull-left">
+    <label for="LastName">Last Name</label>
+   
+           <input id="LastName" name="LastName" type="text"
+                  value="" autocomplete="off" 
+                  required="required"/>
+    </div>
+   
+</div>
+
+        <div class="modal-body">
+            <div class="clear">
+                    <button class="btn-primary btn-large ez-button" type="submit">Join Now</button>
+            </div>
+        </div>
+        </form>
+    
+    <div id="ez-footer" class="modal-body">
+                Msg&amp;data rates may apply. To unsubscribe, text <b>STOP</b> to
+        313131 (393939 in Canada)        . For help text <b>HELP</b> anytime.
+        Available in USA &amp; Canada. Up to 5 msg/mo. Your privacy is always protected and your information will not be shared.
+        <br/>
+        Powered by
+        <a href="http://www.eztexting.com" target="_blank">
+            Ez Texting        </a>
+    </div>
+</div>
+<!--EZtext end-->
 <!-- Patient Login form -->
 <div class="modal hide fade in" id="loginForm" aria-hidden="false">
     <div class="modal-header">
