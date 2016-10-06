@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]--> 
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
@@ -28,7 +28,7 @@
 
 </head>
 
-<body>
+<body> 
    <!--Header-->
     <header class="navbar navbar-fixed-top">
         <div class="navbar-inner">
@@ -105,18 +105,9 @@
             </div>
         </div>
     </section>
-   <!-- / .title -->   
+   <!-- / .title -->     
    <!-- TemplateEndEditable -->
-   <!-- TemplateBeginEditable name="main-content" -->
-
-
-
-
-
-
-
-
-<!-- TemplateEndEditable -->
+   <!-- TemplateBeginEditable name="main-content" --> 
 <!--Bottom-->
 <section id="bottom" class="main">
     <!--Container-->
@@ -216,6 +207,8 @@
 </section>
 <!--/bottom-->
 
+
+   <!-- TemplateEndEditable -->
 <!--Footer-->
             <!--Copyright-->
 <footer id="footer">
