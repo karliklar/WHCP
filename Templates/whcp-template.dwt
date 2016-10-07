@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/sl-slide.css">
+    <link rel="stylesheet" href="../css/sl-slide.css"> 
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="../images/ico/favicon.ico">
@@ -108,6 +108,8 @@
    <!-- / .title -->     
    <!-- TemplateEndEditable -->
    <!-- TemplateBeginEditable name="main-content" --> 
+   
+   <!-- TemplateEndEditable -->
 <!--Bottom-->
 <section id="bottom" class="main">
     <!--Container-->
@@ -208,7 +210,6 @@
 <!--/bottom-->
 
 
-   <!-- TemplateEndEditable -->
 <!--Footer-->
             <!--Copyright-->
 <footer id="footer">
