@@ -148,6 +148,7 @@ ul,ol{padding:0;margin:0 0 10px 25px;}
 ul ul,ul ol,ol ol,ol ul{margin-bottom:0;}
 li{line-height:20px;}
 ul.unstyled,ol.unstyled{margin-left:0;list-style:none;}
+ul.unstyled,li.unstyled{margin-left:0;list-style:none;}
 ul.inline,ol.inline{margin-left:0;list-style:none;}ul.inline>li,ol.inline>li{display:inline-block;*display:inline;*zoom:1;padding-left:5px;padding-right:5px;}
 dl{margin-bottom:20px;}
 dt,dd{line-height:20px;}
