@@ -946,3 +946,6 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .nav-collapse,.nav-collapse.collapse{overflow:hidden;height:0;} 
 .navbar .btn-navbar{display:block;} 
 .navbar-static .navbar-inner{padding-left:10px;padding-right:10px;}}@media (min-width:980px){.nav-collapse.collapse{height:auto !important;overflow:visible !important;}}
+.modal .modal-body .form-inline .registerme {
+	 style="width: 50%;"
+}

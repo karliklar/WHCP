@@ -196,6 +196,21 @@
     </div>
 </section>
 
+<section class="main-info">
+    <div class="container">
+        <div class="row-fluid">
+        <div class="span3">
+                <a class="btn btn-success btn-large pull-left" href="register.html">Register Now!</a>
+            </div> 
+            <div class="span9">
+                <h4>Receive Rewards and More!</h4>
+                <p class="no-margin">When you register with us today you will have full access to a personalized checkout and rewards program!</p>
+            </div>
+            
+        </div>
+       
+    </div>
+</section>
 
 <!--Services-->
 <section id="services">
@@ -528,7 +543,7 @@
                 <div>
                     <ul class="arrow">
                         <li><a  data-toggle="modal" href="#loginForm">Patient Login</a></li>
-                        <li><a  data-toggle="modal" href="#loginForm2">Doctor Login</a></li>
+                        <!--<li><a  data-toggle="modal" href="#loginForm2">Doctor Login</a></li>-->
                         <li><a href="compounds/categories/categories.html">Product Categories</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Terms of Use</a></li>
@@ -624,28 +639,28 @@
     <!--Modal Body-->
     <div class="modal-body">
         <form class="form-inline" action="index.html" method="post" id="patient-login">
-            <input type="text" class="input-small" placeholder="Email">
+            <input type="email" class="input-small" placeholder="Email">
             <input type="password" class="input-small" placeholder="Password"> 
             <label class="checkbox">
                 <input type="checkbox"> Remember me
             </label>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">Sign in</button><br>
+        <a href="register.html" style="margin-left: 85%">Register</a>
            
-        </form>
-        Not a patient? <a data-toggle="modal"  data-dismiss="modal" href="#loginForm2">Doctor Login</a><br>
+        </form><!--
+                Not a patient? <a data-toggle="modal"  data-dismiss="modal" href="#loginForm2">Doctor Login</a><br>-->
         <a href="forms/contact.html">Forgot your password?</a>
     </div>
     <!--/Modal Body-->
 </div>
 <!--  /Login form -->
 
-<!-- Doctor Login form -->
+<!-- Doctor Login form 
 <div class="modal hide fade in" id="loginForm2" aria-hidden="false">
     <div class="modal-header">
         <i class="icon-remove" data-dismiss="modal" aria-hidden="true"></i>
         <h4>Doctor Login</h4>
     </div>
-    <!--Modal2 Body-->
     <div class="modal-body">
         <form class="form-inline" action="index.html" method="post" id="doctor-login">
             <input type="text" class="input-small" placeholder="Email">
@@ -671,8 +686,8 @@
     <!--Modal3 Body-->
     <div class="modal-body">
         <form class="form-inline" action="index.html" method="post" id="employee-login">
-            <input type="text" class="input-small" placeholder="Email">
-            <input type="password" class="input-small" placeholder="Password">
+            <input type="text" class="input-small" placeholder="Email" name="email">
+            <input type="password" class="input-small" placeholder="Password" name="password">
             <button type="submit" class="btn btn-primary">Sign in</button>
             <label class="checkbox">
                 <input type="checkbox"> Remember me
@@ -681,11 +696,12 @@
         </form>
         Not an employee?
          <a data-toggle="modal" data-dismiss="modal" href="#loginForm" style="margin-left: 10%">Patient Login</a>
-        <a data-toggle="modal" data-dismiss="modal" href="#loginForm2" style="margin-left: 10%">Doctor Login</a>
-    </div>
+<!--        <a data-toggle="modal" data-dismiss="modal" href="#loginForm2" style="margin-left: 10%">Doctor Login</a>
+    -->    </div>
     <!--/Modal3 Body-->
 </div>
 <!--  /Login form -->
+
 
 <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 <script src="https://use.fontawesome.com/9e67467047.js"></script>
