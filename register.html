@@ -117,13 +117,13 @@
             <div class="span8">
                 <div class="status alert alert-success" style="display: none"></div>
 
-                <form id="register-form" name="register-form" method="post" action="user-pt.php" role="form">
+                <form id="reg-form" name="register-form" method="post" action="user-pt.php" role="form">
                   <div class="row-fluid">
                     <div class="span5">
                         <label>Name<span style="color:#DD0003"> *</span></label>
                         <input type="text" class="input-block-level" name="name" id="name" required="required" placeholder="Full Name/Company Name">
                         <label>Email Address</label>
-                        <input type="email" class="input-block-level" name="username" id="username" placeholder="Your Email Address">
+                        <input type="email" class="input-block-level" name="username" id="username" placeholder="Your Email Address" required="required">
                         <label>Contact Number<span style="color:#DD0003"> *</span></label>
                         <input type="tel" class="input-block-level" name="phone" id="phone" required="required" placeholder="Your Contact Number">
                     </div>
@@ -137,7 +137,7 @@
 
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-large pull-right">Submit</button>
+                <input type="submit" value="submit" class="btn btn-primary btn-large pull-right" onclick="return val();"/>Submit
                 <p>  Already registered?<br>
          <a data-toggle="modal" data-dismiss="modal" href="#loginForm">Patient Login</a><br>
         <a data-toggle="modal" data-dismiss="modal" href="#loginForm2">Doctor Login</a><br>
@@ -373,7 +373,18 @@
 <script src="js/vendor/jquery-1.9.1.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
-<!-- TemplateBeginEditable name="footer" --><!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="footer" -->
+<!--Check if password is equal to repeatpassword-->
+<script type="text/javascript">
+    function val (){
+        if(frm.repeatpassword.value != frm.password.value){
+            alert("passwords do not match!");
+            return false;
+        }
+        return true;
+    }
+
+</script> <!-- TemplateEndEditable -->
 
 </body>
 </html>
