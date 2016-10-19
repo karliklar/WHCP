@@ -1,21 +1,25 @@
 <?php
+ session_start();
  	 include "connect.php";
 //Only process if form isnt empty
   if ( ! empty($_POST )){
 /*Field Variables*/
-    $name = $_POST['name']; 
     $username = $_POST['username']; 
-    $phone = $_POST['phone'];
     $password = $_POST['password'];
-    $repeatpassword = $_POST['repeatpassword'];
     $encpass = md5 ($password);
 
  /*Post to DataBase WHCP_login*/
-$q = "INSERT INTO UsersPT (name, phone, username, password) VALUES ('$name', '$phone', '$username', '$encpass')";
+$q = "SELECT * FROM UsersPT WHERE username='username' AND password='password'";
 $r = mysql_query ($q);
+if(!$row =mysqli_fetch_assoc($result)){
+	echo "Your username or password is incorrect!";
+}
+else{
+	$_SESSION['id'] = $row['id'];
+}
 
 if ($r){
-	header("Location: #loginForm");
+	header("Location: ptportal.html");
 }
 else {
 	echo mysql_error();
