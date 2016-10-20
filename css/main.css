@@ -37,6 +37,7 @@ body>section#slide-show{padding:0;min-width: 100%;}
 #categories .prev,#categories .next{color:#999;padding-left:15%;}
 .title{background:#49a3e0;color:#fff;padding:20px 0}
 .center{text-align:center}
+.centerimg{margin: 0% 5% 5% 10%}
 .box{background-color:#fff;border-top:1px solid #f0f0f0;-webkit-box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);padding:10px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
 .progress{margin-bottom:10px}
 .progress,.progress .bar{-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;background-image:none;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;text-shadow:none;height:30px;line-height:30px}
@@ -89,6 +90,7 @@ ul.tag-cloud li{display:inline-block;margin:0 0 2px 0}
 	
 /*Login CSS end*/
 	.gap{margin-bottom:50px}
+	.gapright{margin-right:50px}
 .big-gap{margin-bottom:100px}
 .no-margin{margin:0;padding:0}
 #services{background:#252525;color:#999}
