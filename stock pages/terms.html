@@ -315,7 +315,31 @@
         Not a doctor? <a data-toggle="modal" data-dismiss="modal" href="#loginForm">Patient Login</a><br>
         <a href="../forms/contact.html">Forgot your password?</a>
     </div>
-    <!--/Modal2 Body-->
+     <!--/Modal2 Body-->
+</div>
+<!--  /Login form -->
+<!-- Employee Login form -->
+<div class="modal hide fade in" id="loginForm3" aria-hidden="false">
+    <div class="modal-header">
+        <i class="icon-remove" data-dismiss="modal" aria-hidden="true"></i>
+        <h4>Employee Login</h4>
+    </div>
+    <!--Modal3 Body-->
+    <div class="modal-body">
+        <form class="form-inline" action="index.html" method="post" id="employee-login">
+            <input type="text" class="input-small" placeholder="Email" name="email">
+            <input type="password" class="input-small" placeholder="Password" name="password">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+            <label class="checkbox">
+                <input type="checkbox"> Remember me
+            </label> 
+        <a href="../forms/contact.html" style="margin-left: 15%">Forgot your password?</a>
+        </form>
+        Not an employee?
+         <a data-toggle="modal" data-dismiss="modal" href="#loginForm" style="margin-left: 10%">Patient Login</a>
+<!--        <a data-toggle="modal" data-dismiss="modal" href="#loginForm2" style="margin-left: 10%">Doctor Login</a>
+    -->    </div>
+    <!--/Modal3 Body-->
 </div>
 <!--  /Login form -->
 
