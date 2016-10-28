@@ -1,7 +1,7 @@
   <?php
 /*DataBase Connect*/
-define ('DB_NAME', 'WHCP-Forms');
-define ('DB_USER', 'KARLIK');
+define ('DB_NAME', 'Forms');
+define ('DB_USER', 'KARLI');
 define ('DB_PASSWORD', 'CUTTIE0220');
 define ('DB_HOST', 'LOCALHOST');
 
@@ -105,7 +105,7 @@ if (!$db_selected){
 	else
 	{$body = 'We\'ve run into an unexpected html code error';}
 	
-/*Post to DataBase WHCP-Forms*/
+/*Post to DataBase UsersPT*/
 $sql = "INSERT INTO FormData (email_subject, name, email, phone, mdname, date, time, street, city, state, zip, rx, auto, textnotify, mdtype, subject, comment, terms) VALUES ('$email_topic', '$name', '$email', '$phone', '$mdname', '$date', '$time', '$street', '$city', '$state', '$zip', '$rx', '$auto', '$textnotify', '$typearray', '$subject', '$comment', '$terms')";	
 	if (!mysql_query($sql)) {
 		die('Error: ' . mysql_error());

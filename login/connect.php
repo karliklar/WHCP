@@ -1,5 +1,13 @@
  <?php
-	/*DataBase Connect*/
-	$conn = mysql_connect('localhost', 'KARLIK', 'CUTTIE0220');
-	$db = mysql_select_db('WHCP_login');
+$servername = "localhost";
+$username = "KARLI";
+$password = "CUTTIE0220";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+/// Check connection
+if (mysqli_connect_error()) {
+    die("Database connection failed: " . mysqli_connect_error());
+}
 ?>

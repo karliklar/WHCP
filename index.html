@@ -200,7 +200,7 @@
     <div class="container">
         <div class="row-fluid">
         <div class="span3">
-                <a class="btn btn-success btn-large pull-left" href="forms/register.html">Register Now!</a>
+                <a class="btn btn-success btn-large pull-left" href="login/register.html">Register Now!</a>
             </div> 
             <div class="span9">
                 <h4>Receive Rewards and More!</h4>
@@ -637,17 +637,24 @@
     </div>
     <!--Modal Body-->
     <div class="modal-body">
-        <form class="form-inline" action="index.html" method="post" id="patient-login">
-            <input type="email" class="input-small" placeholder="Email">
-            <input type="password" class="input-small" placeholder="Password"> 
+        <form class="form-inline" action="login.php" method="post" id="patient-login">
+            <input type="text" class="input-medium" name="username" placeholder="Email">
+            <input type="password" class="input-medium" name="password" placeholder="Password"> 
             <label class="checkbox">
                 <input type="checkbox"> Remember me
             </label>
             <button type="submit" class="btn btn-primary">Sign in</button><br>
-        <a href="register.html" style="margin-left: 85%">Register</a>
+        <a href="login/register.php" style="margin-left: 75%">Register</a>
            
-        </form><!--
-                Not a patient? <a data-toggle="modal"  data-dismiss="modal" href="#loginForm2">Doctor Login</a><br>-->
+        </form>
+         <?php
+            if (isset($_SESSION['id'])){
+                echo $_SESSION['id'];
+            }   else {
+                echo "You are not logged in!";
+            }
+            ?>
+        <!--Not a patient? <a data-toggle="modal"  data-dismiss="modal" href="#loginForm2">Doctor Login</a><br>-->
         <a href="forms/contact.html">Forgot your password?</a>
     </div>
     <!--/Modal Body-->
@@ -685,13 +692,12 @@
     <!--Modal3 Body-->
     <div class="modal-body">
         <form class="form-inline" action="index.html" method="post" id="employee-login">
-            <input type="text" class="input-small" placeholder="Email" name="email">
             <input type="password" class="input-small" placeholder="Password" name="password">
-            <button type="submit" class="btn btn-primary">Sign in</button>
-            <label class="checkbox">
+            <button type="submit" class="btn btn-primary">Sign in</button><br>
+        <a href="../forms/contact.html">Forgot your password?</a>
+            <!--<label class="checkbox">
                 <input type="checkbox"> Remember me
-            </label> 
-        <a href="../forms/contact.html" style="margin-left: 15%">Forgot your password?</a>
+            </label> -->
         </form>
         Not an employee?
          <a data-toggle="modal" data-dismiss="modal" href="#loginForm" style="margin-left: 10%">Patient Login</a>
