@@ -117,7 +117,7 @@
             <div class="span8">
                 <div class="status alert alert-success" style="display: none"></div>
 
-                <form id="reg-form" name="register-form" method="post" action="register.php" role="form">
+                <form id="reg-form" name="register-form" method="post" action="register.php" onSubmit="return validate()" role="form">
                   <div class="row-fluid">
                     <div class="span5">
                         <label>Name<span style="color:#DD0003"> *</span></label>
@@ -365,7 +365,14 @@
     <!--/Modal3 Body-->
 </div>
 <!--  /Login form -->
+<script>
+        function validate(){
 
+    if(!document.getElementById("password").value==document.getElementById("repeatpassword").value)alert("Passwords do not match");
+    return document.getElementById("password").value==document.getElementById("repeatpassword").value;
+   return false;
+    }
+    </script>
 <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 <script src="https://use.fontawesome.com/9e67467047.js"></script>
 <script src="../js/vendor/jquery-1.9.1.min.js"></script>
@@ -373,16 +380,8 @@
 <script src="../js/main.js"></script>
 <!-- InstanceBeginEditable name="footer" -->
 <!--Check if password is equal to repeatpassword-->
-<script type="text/javascript">
-    function val (){
-        if(frm.repeatpassword.value != frm.password.value){
-            alert("passwords do not match!");
-            return false;
-        }
-        return true;
-    }
 
-</script> <!-- InstanceEndEditable -->
+ <!-- InstanceEndEditable -->
 
 </body>
 </html>
